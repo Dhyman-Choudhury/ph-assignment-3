@@ -1,0 +1,56 @@
+
+        
+
+        @layer utilities {
+            @keyframes bounce-custom {
+                0% {
+                    transform: translate(0%, 0%);
+                    background-color: yellow;
+                }
+                25% {
+                    transform: translate(150px, 250px);
+                    background-color: coral;
+                }
+                50% {
+                    transform: translate(300px, 0px);
+                    background-color: crimson;
+                }
+                75% {
+                    transform: translate(450px, 250px);
+                    background-color: deeppink;
+                }
+                100% {
+                    transform: translate(600px, 0px);
+                    background-color: fuchsia;
+                }
+            }
+            @keyframes bounce-small {
+                0% {
+                    transform: translate(0%, 0%);
+                    background-color: yellow;
+                }
+                25% {
+                    transform: translate(calc(25% - 50px), 150px);
+                    background-color: coral;
+                }
+                50% {
+                    transform: translate(calc(50% - 50px), 0px);
+                    background-color: crimson;
+                }
+                75% {
+                    transform: translate(calc(75% - 50px), 150px);
+                    background-color: deeppink;
+                }
+                100% {
+                    transform: translate(calc(100% - 50px), 0px);
+                    background-color: fuchsia;
+                }
+            }
+
+            .animate-bounce-custom,
+            .animate-bounce-small {
+                animation: bounce-custom 3s cubic-bezier(0.42, 0, 0.58, 1) infinite alternate;
+            }
+            
+
+        }
