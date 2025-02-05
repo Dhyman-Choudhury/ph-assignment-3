@@ -54,3 +54,65 @@
             
 
         }
+        @keyframes changeColor {
+            0% { color: black;  }
+            12% { color: blue; font-family: "Courier New", monospace; }
+            24% { color: green; font-family: "Georgia", serif; }
+            36% { color: purple; font-family: "Impact", sans-serif; }
+            48% { color: orange; font-family: "Times New Roman", serif; }
+            60% { color: teal; font-family: 'Tahoma', sans-serif; }
+            72% { color: brown; font-family: 'Impact', sans-serif; }
+            84% { color: darkblue; font-family: 'Lucida Console', monospace; }
+            100% { color: lightseagreen; font-family: 'Comic Sans MS', cursive; }
+        }
+
+        .animated-word {
+            animation: changeColor 8s infinite alternate ease-in-out;
+        }
+
+        .delay-1 { animation-delay: 1s; }
+        .delay-2 { animation-delay: 2s; }
+        .delay-3 { animation-delay: 3s; }
+        .delay-4 { animation-delay: 4s; }
+        .delay-5 { animation-delay: 5s; }
+        .delay-5 { animation-delay: 6s; }
+        .delay-5 { animation-delay: 7s; }
+        .delay-5 { animation-delay: 8s; }
+
+        @keyframes changeBackground {
+            0% { background-color: #ffebcd; } /* Blanched Almond */
+            20% { background-color: #add8e6; } /* Light Blue */
+            40% { background-color: #98fb98; } /* Pale Green */
+            60% { background-color: #dda0dd; } /* Plum */
+            80% { background-color: #ffcccb; } /* Light Red */
+            100% { background-color: #6489b0; } /* Light Red */
+        }
+
+        
+
+        .delay-1 { animation-delay: 1s; }
+        .delay-2 { animation-delay: 2s; }
+        .delay-3 { animation-delay: 3s; }
+        .delay-4 { animation-delay: 4s; }
+        .delay-5 { animation-delay: 5s; }
+
+        .bg-animate {
+            animation: changeBackground 5s infinite alternate ease-in-out;
+        }
+        @keyframes changeBackground_2 {
+            0%   { background-color: #ffadad; } /* Light Red */
+            20%  { background-color: #ffd6a5; } /* Light Orange */
+            40%  { background-color: #fdffb6; } /* Light Yellow */
+            60%  { background-color: #9bf6ff; } /* Light Blue */
+            80%  { background-color: #bdb2ff; } /* Light Purple */
+            100% { background-color: #ffadad; } /* Loop Back to Light Red */
+        }
+        .delay-1 { animation-delay: 1s; }
+        .delay-2 { animation-delay: 2s; }
+        .delay-3 { animation-delay: 3s; }
+        .delay-4 { animation-delay: 4s; }
+        .delay-5 { animation-delay: 5s; }
+
+        .bg_animate_2 {
+            animation: changeBackground_2 5s infinite alternate ease-in-out;
+        }
